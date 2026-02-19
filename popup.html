@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+
+<body class="bg-blue-100 p-2">
+    <div class="flex flex-col items-center ">
+        <div class=" flex items-center">
+            <h1 class="font-extrabold text-2xl  "> RBS-</h1>
+            <p class="flex text-nowrap text-xl text-purple-800 font-bold"> Rapid Buffer Support</p>
+        </div>
+        <p class="text-gray-500"><a target="_blank"  href="https://icons8.com/icon/clUTZbeFfSbc/buffer"><i class="font-bold text-blue-600">Buffer</i></a> icon by <a target="_blank" href="https://icons8.com"><i class="font-bold text-blue-600">Icons8</i></a></p>
+        <p class="py-2 text-amber-600 font-bold text-[12px]">
+            "Save text once, retrieve it instantly anywhere."
+        </p>
+    </div>
+    <div class="flex items-center justify-center pb-1">
+        <a href="http://rapid-buffer.vercel.app/login" target="_blank">
+            <button id="Login" class="text-white bg-blue-700 px-2 py-1 rounded-full cursor-pointer">Login</button>
+        </a>
+        <button id="Start" class="text-white bg-blue-700 px-2 py-1 rounded-full cursor-pointer hidden">Enable
+            Extension</button>
+        <button id="End" class="text-white bg-red-700 px-2 py-1 rounded-full cursor-pointer hidden">Disable Extension</button>
+
+
+    </div>
+
+    <div class="text-sm m-3 w-65 h-50 overflow-hidden hover:overflow-auto bg-white space-y-4 rounded-2xl pb-1">
+
+        <div class="w-60 p-2 ">
+            <div class="text-center">
+                <h3 class="text-lg font-semibold text-orange-600">
+                    How to Use
+                </h3>
+                <p class="text-slate-600 font-bold mt-1">
+                    Quickly insert saved text using short aliases
+                </p>
+            </div>
+
+            <div class="bg-white/10 rounded-xl p-3 space-y-2">
+                <p class="font-medium text-orange-600">Getting Started</p>
+                <ol class="list-decimal list-inside space-y-1 text-slate-600">
+                    <li>Login to the main website. <br> Main website: ( <a href="http://rapid-buffer.vercel.app/" target="_blank"
+                            class="text-blue-600">Link</a>)</li>
+                    <li>Insert the <i>DATA</i> and <i>ALIAS</i> pair on the main website and save it
+                    </li>
+                </ol>
+            </div>
+
+            <div class="bg-white/10 rounded-xl p-3 space-y-2">
+                <p class="font-medium text-orange-600">Using an Alias</p>
+                <ul class="list-disc list-inside space-y-1 text-slate-600">
+                    <li>Enable the extension to avail the functionality</li>
+                    <li>Type the respective alias_name where you want the saved data with a leading identifier
+                        (<b><i>RBS.alias_name</i></b>)</li>
+                    <li>Trigger the extension by inserting a space after typing the alias name</li>
+                    <li>The alias will then be replaced by the actual data stored on the server</li>
+                </ul>
+            </div>
+
+            <div class="bg-red-500/10 border border-red-500/30 rounded-xl p-3">
+                <p class="font-medium text-red-600">Alias Not Found</p>
+                <p class="text-slate-600">
+                    You'll see
+                    <span class="font-semibold text-red-600">
+                        <i>"RBS_INVALID.alias_name"</i>
+                    </span>
+                    if the alias does not exist.
+                </p>
+            </div>
+
+            <div class="bg-white/10 rounded-xl p-3 space-y-2">
+                <p class="font-medium text-orange-600">Important Notes</p>
+                <ul class="list-disc list-inside space-y-1 text-slate-600">
+                    <li>Aliases must be unique</li>
+                    <li>Aliases are case-sensitive</li>
+                    <li>Extra spaces (leading or trailing) are ignored</li>
+                    <li>Login is required</li>
+                </ul>
+            </div>
+
+            <div class="bg-emerald-500/10 border border-emerald-500/30 rounded-xl p-3">
+                <p class="font-extrabold text-red-500">Tip</p>
+                <p class="text-slate-600 font-semibold">
+                    Use short aliases like <i>name, add (for address), Intro, aboutme.</i>
+                </p>
+            </div>
+            <div
+                class="mt-4 rounded-xl bg-gray-700 p-4 text-sm text-white flex flex-col justify-start gap-2">
+                <h2 class="mb-2 text-lg font-semibold text-[#73f97e]">
+                    Usage Notice!!!
+                </h2>
+
+                <p class="mb-2">
+                    RBS works best on standard text inputs such as
+                    <span class="font-mono text-red-500">input</span> and
+                    <span class="font-mono text-red-500">textarea</span>.
+                </p>
+
+                <p class="mb-2">
+                    Some modern websites (like chat apps and rich editors) use custom
+                    <span class="font-mono text-red-500">contenteditable</span> elements.
+                    In these cases, alias detection and expansion may be delayed or inconsistent.
+                </p>
+
+                <p class="mb-2">
+                    RBS will not work in browser-restricted areas such as the address bar, or system dialogs.
+                </p>
+
+                <p class="text-xs text-green-500">
+                    Tip: For the most reliable experience, use RBS in simple text fields
+                    and avoid relying on it for critical messages in complex editors.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="popup.js"></script>
+
+</body>
+
+</html>

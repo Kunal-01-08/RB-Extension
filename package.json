@@ -1,0 +1,17 @@
+{
+  "name": "extension",
+  "version": "1.0.0",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+  "watch": "tailwindcss -i ./popup.css -o ./src/output.css --watch"
+
+  },
+  "author": "Kunal",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.18"
+  }
+}
